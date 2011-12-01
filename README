@@ -1,0 +1,6 @@
+This is a set of 'Reusable' tools created for specific purposes. 
+
+Below is a list of tools (in sub-directories) that are part of this repository. 
+
+- tempAlarm : A script that warns the user when temperature reaches a critical range (range is set by the user).
+- 2csv : This converts the values separated by newline characters (in a file) into a single line of Comma-separated value. 

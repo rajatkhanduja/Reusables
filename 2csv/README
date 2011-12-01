@@ -1,0 +1,20 @@
+2csv was created to convert a file containing a list of email addresses to a string of comma-separated addresses. 
+
+This is just one use of the program. Basically any set of values separated by new-line characer can be converted into CSV format. 
+
+What's the use ? Say, you have a list of strings that need to go into an array in a program. Or like in the first example, a list of email addresses you have to send an email to. 
+
+
+The tool is easy to use.
+
+To read from a file, say filename, and create a list of CSV, simply use
+
+$ 2csv -f filename
+
+In case you want the values to be separated by ';' instead of ',', then :
+
+$ 2csv -f filename -s ';'
+
+If you want the tool to read from stdin, then 
+
+$ 2csv -s ';'

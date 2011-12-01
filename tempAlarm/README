@@ -1,0 +1,25 @@
+tempAlarm was created to warn the user of high temperature so as to ensure that the 'critical' temperature was not reached. The script has been generalised to suit all users and various laptops/computers.
+
+It requires the following tools to be installed :-
+- sensors
+- espeak
+
+NOTE : THE RANGE USES REGULAR EXPRESSIONS
+
+The tool can be used as :-
+
+$ tempAlarm -r [8-9][0-9]
+
+This warns when the temperature is in the range 80-99.
+
+The warning is logged to "$HOME/tmp_log". To turn logging OFF, use :-
+
+$ tempAlarm -l 0 -r 9[5-9]
+
+To change the log file, use as :-
+
+$ tempAlarm -f logfile -r 9[5-9]
+
+To change the message during warning use the '-m' switch and for changing the delay between temperature checks use '-d'.
+
+$ tempAlarm -d 4 -m 'New Warning' -r 9[5-9]
