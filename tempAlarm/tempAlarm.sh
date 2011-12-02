@@ -37,8 +37,6 @@ function usage()
 
 while getopts 'r:hl:d:m:f:' OPTION
 do
-  echo $OPTION
-  echo $OPTARG
   case $OPTION in
     h)
       usage
