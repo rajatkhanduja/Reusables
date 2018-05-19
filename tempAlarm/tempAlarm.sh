@@ -35,7 +35,7 @@ function usage()
   echo "    -m message  Set message to be read on reaching critical temperature"
 }
 
-while getopts 'r:hl:d:m:f:' OPTION
+while getopts 'r:h:l:d:m:f:' OPTION
 do
   case $OPTION in
     h)
